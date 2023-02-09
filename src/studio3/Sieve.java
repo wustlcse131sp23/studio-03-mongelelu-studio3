@@ -19,12 +19,12 @@ public class Sieve {
 		}
 		for (int j = 2; j < n; j++) // j = 2 means that we are checking the multiples of 2
 		{
-			for (int i = (2 * j) - 1; i < n; i = i + j) // i = (2 * j) - 1 means that we are starting at the next multiple of whatever number (j) we are looking at, but at the index value
+			for (int i = (2 * j) - 1; i < n; i = i + j) // i = (2 * j) - 1 means that we are starting at the next multiple of whatever number (j) we are looking at, but at the index value, so basically, 2j would equal 6 but minus one means that the index is 5, but we are starting at value 6
 			{
 				sieve [i] = 0;
 			}
 		}
-		for (int i = 1; i < n; i++) // sieve.length is the same as n
+		for (int i = 1; i < n; i++)
 		{
 			System.out.println( sieve[i] );
 		}
